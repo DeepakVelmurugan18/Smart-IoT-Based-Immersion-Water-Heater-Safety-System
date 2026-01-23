@@ -173,3 +173,4 @@ void loop() {
   Blynk.virtualWrite(V2, heaterStatus);    // Heater Status
   Blynk.virtualWrite(V3, buzzerStatus);    // Buzzer Status
 }
+
