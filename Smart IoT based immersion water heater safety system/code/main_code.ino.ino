@@ -9,7 +9,6 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 // ----- Blynk Configuration -----
-
 char auth[] = BLYNK_AUTH_TOKEN;
 char ssid[] = "Deepak";
 char pass[] = "Deepak18";
@@ -172,6 +171,7 @@ void loop() {
   Blynk.virtualWrite(V2, heaterStatus);    // Heater Status
   Blynk.virtualWrite(V3, buzzerStatus);    // Buzzer Status
 }
+
 
 
 
