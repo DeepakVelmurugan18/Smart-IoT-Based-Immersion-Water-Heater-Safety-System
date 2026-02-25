@@ -12,7 +12,6 @@
 char auth[] = BLYNK_AUTH_TOKEN;
 char ssid[] = "Deepak";
 char pass[] = "Deepak18";
-
 // ----- Pin definitions -----
 #define ONE_WIRE_BUS D4      // DS18B20 data pin
 #define TRIG_PIN D5          // Ultrasonic Trigger
@@ -171,6 +170,7 @@ void loop() {
   Blynk.virtualWrite(V2, heaterStatus);    // Heater Status
   Blynk.virtualWrite(V3, buzzerStatus);    // Buzzer Status
 }
+
 
 
 
