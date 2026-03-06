@@ -29,7 +29,6 @@ DallasTemperature sensors(&oneWire);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 String scrollMsg = "  Object Detected, Heater OFF  ";
-
 void setup() {
   Serial.begin(9600);
   sensors.begin();
@@ -170,6 +169,7 @@ void loop() {
   Blynk.virtualWrite(V2, heaterStatus);    // Heater Status
   Blynk.virtualWrite(V3, buzzerStatus);    // Buzzer Status
 }
+
 
 
 
